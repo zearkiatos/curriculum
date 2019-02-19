@@ -1,0 +1,45 @@
+
+@import 'variables';
+
+body{
+    background-color:$bgColor;
+}
+
+header{
+    background-image: $headerBgImg !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lightGreen {
+    background-color: $bgLightGreen;
+    padding-bottom: 1em;
+}
+
+footer{
+    background-color:$bgDarkGreen;
+}
+
+#logo, a,#jumbotron,#supporting-header, .port, .about-para,ul, li, .overlay{
+    color:$txtPrimaryColor;
+}
+ .overlay-nav{
+     background-color:$bgColor;
+     z-index: 999;
+     min-width: 100%;
+     height: 100%;
+     position: fixed;
+     opacity: 0.9;
+ }
+ .hidden:active{
+     display:none;
+ }
+ul.listSkills li{
+    list-style-type: disc;
+}
+.about-para{
+    text-align: justify;
+}
+.btn{
+    border:2px $bgPrimaryColor solid; 
+}
