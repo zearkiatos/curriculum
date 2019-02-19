@@ -16,8 +16,12 @@ header{
     padding-bottom: 1em;
 }
 
+.lightGrey{
+    background-color:$footerBgColorLight;
+}
+
 footer{
-    background-color:$bgDarkGreen;
+    background-color:$footerBgColorDark;
 }
 
 #logo, a,#jumbotron,#supporting-header, .port, .about-para,ul, li, .overlay{
@@ -43,3 +47,4 @@ ul.listSkills li{
 .btn{
     border:2px $bgPrimaryColor solid; 
 }
+
