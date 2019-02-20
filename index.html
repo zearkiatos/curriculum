@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/fontawesome/fontawesome.css">
     <link rel="stylesheet" href="css/fontawesome/all.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/particles/style.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/custom.css">
     <!-- begin favicon stuff-->
@@ -46,9 +47,14 @@
     <script src="scripts/jquery/jquery-3.3.1.js"></script>
     <script src="scripts/bootstrap/bootstrap.js"></script>
     <script src="scripts/fontawesome/all.js"></script>
+    <script src="scripts/particles/particles.js"></script>
+    <script src="scripts/particles/app.js"></script>
+    <script src="scripts/particles/lib/stats.js"></script>
     <script src="scripts/main.js"></script>
+  
   </head>
   <body>
+      <div id="particles-js"></div>
     <header>
         <div class="overlay-nav hidden">
             <ul class="mobile">
@@ -97,8 +103,11 @@
         <h2 id="supporting-header">Ingeniero de Sistemas | MCSD</h2><a href="https://www.youracclaim.com/users/pedro-capriles/badges" target="_blank" class="btn"> <i class="fas fa-certificate"></i> Badges</a>
       </div>
     </header>
+
     <section>
-      <div class="container">
+
+      <div class="container ">
+          <div id="particles-js"></div>
         <h1 class="port">Sobre Mí</h1>
         <div class="self-pic"></div>
         <!-- Change paragraph text here, add subheadings by using h2 or h3 tags -->
@@ -131,6 +140,13 @@
           </ul>
         </p>
       </div>
+
+                  <!-- scripts -->
+      <script src="scripts/particles/particles.js"></script>
+      <script src="scripts/particles/app.js"></script>
+                  
+                  <!-- stats.js -->
+      <script src="scripts/particles/lib/stats.js"></script>
     </section>
     <section>
       <!-- edit the H2 text if you need to-->
@@ -161,5 +177,36 @@
         <p class="foot">&copy; Pedro Capriles 2019</p>
       </div>
     </footer>
+    <script>
+      $(document).ready(function(){
+        var body = document.body,
+          html = document.documentElement;
+          document.getElementById("particles-js").setAttribute("style","height:"+body.scrollHeight+"px !important");
+        // $("#particles-js").innerHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+      });
+    </script>
+    <!-- <script>
+        $(document).ready(function(){
+          var count_particles, stats, update;
+          stats = new Stats;
+          stats.setMode(0);
+          stats.domElement.style.position = 'absolute';
+          stats.domElement.style.left = '0px';
+          stats.domElement.style.top = '0px';
+          document.body.appendChild(stats.domElement);
+          count_particles = document.querySelector('.js-count-particles');
+          update = function() {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+              count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+          };
+          requestAnimationFrame(update);
+        });
+         
+        </script> -->
+
   </body>
 </html>
