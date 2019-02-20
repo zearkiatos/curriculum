@@ -42,6 +42,14 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $('.skills').click(function() {
+    $('html, body').animate({
+      scrollTop: $('.skills-section').offset().top
+    }, 1200);
+  });
+});
+
 // Contact link going to contact section
 $(document).ready(function() {
   $('.contact-nav').click(function() {
