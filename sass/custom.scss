@@ -45,6 +45,11 @@ ul.listSkills li{
     text-align: justify;
 }
 .btn{
-    border:2px $bgPrimaryColor solid; 
+    border:2px $bgPrimaryColor solid;
+    color:#fff;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
