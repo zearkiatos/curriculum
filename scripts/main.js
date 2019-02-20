@@ -1,9 +1,10 @@
 // some mind blowing mobile nav jquery
 $(document).ready(function() {
+
   $("#toggle").click(function() {
     $(this).fadeToggle("slow",0);
     $(".overlay-nav").fadeIn("slow,", 0)
-  $(".close").click(function() {
+  $(".close, .overlay-nav").click(function() {
     $(this).fadeToggle("slow", 0)
     $(".overlay-nav").fadeOut("slow", 0)
     $("#toggle").fadeIn("slow", 0)
@@ -11,6 +12,15 @@ $(document).ready(function() {
 
 });
 });
+  $('.cerrar').click(function(){
+    $(".overlay-nav").fadeOut("slow", 0)
+
+  });
+
+  $('.overlay-nav').click(function(){
+    $(".overlay-nav").fadeOut("slow", 0)
+
+  });
 });
 
 // About Link going to about picture with supporting paragraphs

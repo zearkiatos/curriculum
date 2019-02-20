@@ -588,7 +588,7 @@ nav {
   background-color: #cdcec0;
   z-index: 999;
   min-width: 100%;
-  height: 100%;
+  height: 100%; 
   position: fixed;
   opacity: 0.9;
 }
@@ -603,7 +603,7 @@ nav {
   height: 70px;
   width: 70px;
   overflow: hidden;
-  background-image: url(/img/cross.png);
+  background-image: url('../assets/img/cross.png') !important;
   background-repeat: no-repeat;
   z-index: 1000;
   cursor: pointer;
@@ -887,7 +887,7 @@ img:hover {
   font-size: 2em;
   font-weight: 600;
   color: white;
-  float: left;
+  /* float: left; */
   letter-spacing: 0.075em;
 }
 
@@ -1051,9 +1051,9 @@ nav {
 .overlay-nav {
   background-color: #cdcec0;
   z-index: 999;
-  min-width: 100%;
-  height: 100%;
-  position: fixed;
+  /* min-width: 100%;
+  height: 100%; */
+  /* position: fixed; */
   opacity: 0.9;
 }
 

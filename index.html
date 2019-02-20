@@ -25,6 +25,7 @@
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/fontawesome/fontawesome.css">
     <link rel="stylesheet" href="css/fontawesome/all.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/custom.css">
     <!-- begin favicon stuff-->
@@ -43,41 +44,55 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
     <script src="scripts/jquery/jquery-3.3.1.js"></script>
+    <script src="scripts/bootstrap/bootstrap.js"></script>
     <script src="scripts/fontawesome/all.js"></script>
+    <script src="scripts/main.js"></script>
   </head>
   <body>
     <header>
-      <div class="overlay-nav hidden">
-        <ul class="mobile">
-          <li><a href="#">INICIO</a></li>
-        </ul>
-        <ul class="mobile">
-          <li><a href="#" class="about">SOBRE MÍ</a></li>
-        </ul>
-        <ul class="mobile">
-          <li><a href="#" class="work">TRABAJOS</a></li>
-        </ul>
-        <ul class="mobile">
-          <li><a href="#" class="contact-nav">CONTACTO</a></li>
-        </ul>
-        <div class="close"></div>
-      </div>
+        <div class="overlay-nav hidden">
+            <ul class="mobile">
+              <li><a href="#">INICIO</a></li>
+            </ul>
+            <ul class="mobile">
+              <li><a href="#" class="about">SOBRE MÍ</a></li>
+            </ul>
+            <ul class="mobile">
+              <li><a href="#" class="work">TRABAJOS</a></li>
+            </ul>
+            <ul class="mobile">
+              <li><a href="#" class="contact-nav">CONTACTO</a></li>
+            </ul>
+            <ul class="mobile">
+                <li><a href="#" class="cerrar">CERRAR</a></li>
+              </ul>
+            <div class="close"></div>
+          </div>
       <div class="container">
-        <div id="logo">{PEDRO.CAPRILES}.io</div>
-        <nav><a id="toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>
-          <ul class="in">
-            <li><a href="/">INICIO</a></li>
-          </ul>
-          <ul class="in">
-            <li><a href="#" class="about">SOBRE MÍ</a></li>
-          </ul>
-          <ul class="in">
-            <li><a href="#" class="work">TRABAJO</a></li>
-          </ul>
-          <ul class="in">
-            <li><a href="#" class="contact-nav">CONTACTO</a></li>
-          </ul>
-        </nav>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <div id="logo">{PEDRO.CAPRILES}.io</div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <nav><a id="toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>
+                <ul class="in">
+                  <li><a href="/">INICIO</a></li>
+                </ul>
+                <ul class="in">
+                  <li><a href="#" class="about">SOBRE MÍ</a></li>
+                </ul>
+                <ul class="in">
+                  <li><a href="#" class="work">TRABAJO</a></li>
+                </ul>
+                <ul class="in">
+                  <li><a href="#" class="contact-nav">CONTACTO</a></li>
+                </ul>
+              </nav>
+             
+          </div>
+        </div>
+
+
         <h1 id="jumbotron">Desarrollador FullStack</h1>
         <h2 id="supporting-header">Ingeniero de Sistemas | MCSD</h2><a href="https://www.youracclaim.com/users/pedro-capriles/badges" target="_blank" class="btn"> <i class="fas fa-certificate"></i> Badges</a>
       </div>
@@ -146,6 +161,5 @@
         <p class="foot">&copy; Pedro Capriles 2019</p>
       </div>
     </footer>
-    <script src="scripts/main.js"></script>
   </body>
 </html>
