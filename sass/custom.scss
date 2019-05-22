@@ -7,8 +7,8 @@ body{
     background-color:$bgColor;
 }
 
-section{
-    margin:$separate 0;
+section.content{
+    margin:$separate 0 !important;
 }
 
 header{
