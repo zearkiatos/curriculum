@@ -1,8 +1,14 @@
 
 @import 'variables';
 
+$separate:1em;
+
 body{
     background-color:$bgColor;
+}
+
+section{
+    margin:$separate 0;
 }
 
 header{
