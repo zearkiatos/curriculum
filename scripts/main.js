@@ -68,6 +68,15 @@ $(document).ready(function() {
   });
 });
 
+// Work link going to portfolio section
+$(document).ready(function() {
+  $('.labs').click(function() {
+    $('html, body').animate({
+      scrollTop: $('.flex').offset().top
+    }, 1600);
+  });
+});
+
 $(document).ready(function() {
   $('a').click(function() {
     $('overlay-nav').fadeOut();
@@ -147,6 +156,22 @@ $(document).ready(function() {
    $('figcaption').css('display', 'block')
 }
 });
+});
+
+$(document).ready(function() {
+  $('#one2').on({
+    mouseenter: function(){
+      $('#img21').css("height", "75px")
+      $('#img21').css("opacity", "1")
+    }
+  });
+  $('#one2').on({
+    mouseleave: function(){
+    $('figcaption').css("height", "0px")
+    $('figcaption').css("opacity", "0")
+    }
+
+  });
 });
 
 

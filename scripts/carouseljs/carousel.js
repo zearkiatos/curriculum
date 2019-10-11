@@ -6,17 +6,18 @@ $(document).ready(function(){
       autoplay: true,
       autoplaySpeed: 1000,
       arrows: false,
+      infinite:true,
       dots: false,
       pauseOnHover: false,
       responsive: [{
         breakpoint: 768,
         settings: {
-          slidesToShow: 4
+          slidesToShow: 4,
         }
       }, {
         breakpoint: 520,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 3,
         }
       }]
     });
