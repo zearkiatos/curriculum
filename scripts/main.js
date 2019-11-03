@@ -172,6 +172,19 @@ $(document).ready(function() {
     }
 
   });
+  $('#two2').on({
+    mouseenter: function(){
+      $('#img22').css("height", "75px")
+      $('#img22').css("opacity", "1")
+    }
+  });
+  $('#two2').on({
+    mouseleave: function(){
+    $('figcaption').css("height", "0px")
+    $('figcaption').css("opacity", "0")
+    }
+
+  });
 });
 
 
