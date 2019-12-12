@@ -185,6 +185,32 @@ $(document).ready(function() {
     }
 
   });
+
+  $('#three2').on({
+    mouseenter: function(){
+      $('#img23').css("height", "75px")
+      $('#img23').css("opacity", "1")
+    }
+  });
+  $('#three2').on({
+    mouseleave: function(){
+    $('figcaption').css("height", "0px")
+    $('figcaption').css("opacity", "0")
+    }
+  });
+
+  $('#four2').on({
+    mouseenter: function(){
+      $('#img24').css("height", "75px")
+      $('#img24').css("opacity", "1")
+    }
+  });
+  $('#four2').on({
+    mouseleave: function(){
+    $('figcaption').css("height", "0px")
+    $('figcaption').css("opacity", "0")
+    }
+  });
 });
 
 
