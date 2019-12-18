@@ -211,6 +211,19 @@ $(document).ready(function() {
     $('figcaption').css("opacity", "0")
     }
   });
+
+  $('#five2').on({
+    mouseenter: function(){
+      $('#img25').css("height", "75px")
+      $('#img25').css("opacity", "1")
+    }
+  });
+  $('#five2').on({
+    mouseleave: function(){
+    $('figcaption').css("height", "0px")
+    $('figcaption').css("opacity", "0")
+    }
+  });
 });
 
 
